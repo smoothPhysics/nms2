@@ -4,8 +4,8 @@
 * Philipp Denk, 11714004
 
 ## Aufgaben
-### propagation.cxx
-Aufwand: 6h (Stunden)
+### morse-potential.cxx
+* Aufwand: 6h (Stunden)
 
 ## Fragen
 * Die Ergebnisse für die beiden Hamiltonmatrize unterscheiden sich im Durchschnitt um 3.48%. 
@@ -16,7 +16,13 @@ Somit kommt man bei N = 65 auf 11ms für Punkt a und auf 36ms bei Punkt b.
 Ebenso sieht man, dass der relative Fehler zwischen analytischen Werten aus J. Chem. Phys. 91, 3571 (1989) und berechneten Werten aus dem Programm bei 
 Methode b merkbar kleiner ist als bei Methode a. Im Durchschnitt um 2 Größenordnungen. Selbiges gilt für in J. Chem. Phys. 91, 3571 (1989) nummerisch berechneten Werte. 
 
-## Output propagation.cxx
+## Output und Inputfiles morse-potential.cxx
+* Input:
+    n129_eigenvalues.txt (Werte aus Tabelle II (J. Chem. Phys. 91, 3571 (1989)) für 129 Gridpunkte)
+    n65_eigenvalues.txt (Werte aus Tabelle II (J. Chem. Phys. 91, 3571 (1989)) für 65 Gridpunkte)
+    analytical_eigenvalues.txt (Analytische Werte aus Tabelle II (J. Chem. Phys. 91, 3571 (1989)))
+
+* Output:
 Filename: "eigenvalues.txt"
 Inhalt:
     -Angabe der Gridpunkte
@@ -26,5 +32,6 @@ Inhalt:
     -4. Spalte: Relative Abweichung zu den nummerischen Werten aus Tabelle II (J. Chem. Phys. 91, 3571 (1989))
     -5. Spalte: Relative Abweichung des Durchscnitts aus a und b von den analytischen Werten aus Tabelle II (J. Chem. Phys. 91, 3571 (1989))
     -6. Spalte: Relative Abweichung zwischen a und b
+
 
 
